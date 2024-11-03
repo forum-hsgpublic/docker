@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS users (
     login_id VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
-    join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    join_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_login TIMESTAMP DEFAULT NULL
 );
 
 -- Categories 테이블 (게시물 카테고리)
